@@ -45,6 +45,8 @@ GEM
     crass (1.0.4)
     erubi (1.7.1)
     ffi (1.9.25)
+    fuzzily (0.3.3)
+      activerecord (>= 2.3.17)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -124,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  fuzzily
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
