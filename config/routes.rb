@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       post '/allergen/search' => 'allergens#search'
+      get '/allergen' => 'allergens#index'
       # resources :allergen
     end
   end

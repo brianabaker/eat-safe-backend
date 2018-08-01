@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/rails-api/active_model_serializers.git
+  revision: f3a19bd515330751083c0a70b8f57d792de0d788
+  branch: 0-10-stable
+  specs:
+    active_model_serializers (0.10.7)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,16 +52,17 @@ GEM
     arel (8.0.0)
     builder (3.2.3)
     byebug (10.0.2)
+    case_transform (0.2)
+      activesupport
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     erubi (1.7.1)
     ffi (1.9.25)
-    fuzzily (0.3.3)
-      activerecord (>= 2.3.17)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    jsonapi-renderer (0.2.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -125,8 +137,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   byebug
-  fuzzily
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)

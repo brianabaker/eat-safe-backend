@@ -1,5 +1,10 @@
 class Api::V1::AllergensController < ApplicationController
 
+  def index
+    all_allergens
+    render json: {status: 'SUCCESS', message: "All Allergens", data: all_allergens}, status: :ok
+  end
+
   def search
     query = params[:allergen].downcase
     if query
@@ -12,5 +17,11 @@ class Api::V1::AllergensController < ApplicationController
       end
     end
   end # closes search
+
+  private
+
+  def all_allergens
+    @allergens = Allergen.all
+  end
 
 end
