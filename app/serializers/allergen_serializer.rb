@@ -1,3 +1,5 @@
 class AllergenSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :name
+  has_many :translations
+  has_many :languages, through: :translations
 end

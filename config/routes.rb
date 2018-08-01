@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/allergen/search' => 'allergens#search'
       get '/allergen' => 'allergens#index'
+      get '/allergen/:name' => 'allergens#show_translations'
       # resources :allergen
     end
   end
