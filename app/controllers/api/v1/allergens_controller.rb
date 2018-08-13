@@ -10,7 +10,8 @@ class Api::V1::AllergensController < ApplicationController
   def show_translations
     translations = set_allergen.translations
     if !translations.empty?
-      render json: translations, status: :ok
+      alpha = translations.sort_by {|translation| translation.language.name }
+      render json: alpha, status: :ok
     else
       render json: {status: 'NOT FOUND', message: 'Translation not found'}, status: :not_found
     end
