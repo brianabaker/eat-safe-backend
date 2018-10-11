@@ -6,17 +6,17 @@
 # #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # #   Character.create(name: 'Luke', movie: movies.first)
 #
-# # DUMMY
+# # BLANK EXAMPLE
 # # Translation.create(word: , content: , allergen: peanut, language: )
-#
+
 # # LANGUAGES
 # spanish = Language.create(name: "spanish")
 # german = Language.create(name: "german")
 # serbian = Language.create(name: "serbian")
-#
-# # PEANUT
+
+# # # PEANUT
 # peanut = Allergen.create(name: "peanuts")
-#
+
 # Translation.create(word: "cacahuetes", content_default: "Soy alérgico a los cacahuetes.", allergen: peanut, language: spanish)
 # Translation.create(word: "erdnüsse", content_default: "Ich bin allergisch gegen erdnüsse.", allergen: peanut, language: german)
 # Translation.create(word: "кикирики", content_default: "Ја сам алергичан на кикирики (Ja sam alergičan na kikiriki).", content_female: "Ја сам алергична на кикирики (Ja sam alergična na kikiriki).", allergen: peanut, language: serbian)

@@ -18,6 +18,7 @@ class Api::V1::AllergensController < ApplicationController
   end
 
   def search
+    
     query = params[:allergen].downcase
     if query
       allergen = Allergen.where('name LIKE ?', "%#{query}%")
